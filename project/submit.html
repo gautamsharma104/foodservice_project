@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link rel="stylesheet" href="style2.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<body>
+    
+
+    <div class="container">
+        <h1 id="heading">thanks! Your order has been successfully recorded </h1>
+
+        <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ex earum quam! </p>
+        <p>enjoy the food ! have a nice day </p>
+    </div>
+
+    <div class="box" >
+        <div class="post">
+            <div id="text">thanks for rating us !</div>
+            <div id="edit"><button>EDIT</button></div>
+        </div>
+    <div class="rating">
+        <div id = "heading_h3"><h3>Rating us here</h3></div>
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5" class = "fas fa-star" ></label>
+            <input type="radio" name="rate" id="rate-4">
+            <label for="rate-4" class = "fas fa-star" ></label>
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3" class = "fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2" class = "fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-1" class = "fas fa-star"></label>
+        
+            <form action="#">
+                <div ><header></header></div>
+                
+                <div class="textarea">
+                  <textarea cols="30" placeholder="Describe your experience.."></textarea>
+                </div>
+                <div class="btn">
+                  <button type="submit">SUBMIT</button>
+                </div>
+              </form>
+       
+        </div> 
+
+    </div>
+
+
+    <script>
+        const btn = document.querySelector(".btn");
+        const post = document.querySelector(".post");
+        const edit = document.querySelector("#edit");
+        const rate = document.querySelector(".rating");
+
+        btn.onclick = ()=>{
+            rate.style.display = "none";
+            post.style.display = "block";
+            return false;
+        }
+        edit.onclick = ()=>{
+            rate.style.display = "block";
+            post.style.display = "none";
+            return false;
+        }
+    </script>
+</body>
+
+</html>
